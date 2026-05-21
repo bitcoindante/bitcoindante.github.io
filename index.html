@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dante's Bitcoin Journey</title>
+  <title>Dante's Bitcion Journey</title>
   <link rel="preconnect" href="https://googleapis.com">
   <link rel="preconnect" href="https://gstatic.com" crossorigin>
   <link href="https://googleapis.com/css2?family=Grenze+Gotisch:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
@@ -17,7 +17,8 @@
       font-size: 1.35rem;
       color: #3d2f1d;
       margin: 0;
-      padding: 50px 20px;
+      /* Increased top padding slightly to give the whole paper room to breathe */
+      padding: 40px 20px; 
       display: flex;
       justify-content: center;
     }
@@ -25,13 +26,16 @@
     .torn-paper {
       background-color: #faf4e8;
       max-width: 600px;
-      padding: 50px 40px;
+      /* Balanced the inside padding so text isn't pushed too far down or out */
+      padding: 60px 50px; 
+      
+      /* FIXED: Flattened the polygon coordinates so the cuts stay within a safe 0.5% margin */
       clip-path: polygon(
-        0% 2%, 4% 0%, 9% 3%, 15% 1%, 21% 4%, 27% 1%, 33% 3%, 40% 0%, 48% 2%, 55% 0%, 
-        62% 3%, 68% 1%, 74% 4%, 81% 1%, 88% 3%, 94% 0%, 100% 2%,
-        98% 8%, 100% 15%, 97% 23%, 99% 31%, 98% 40%, 100% 48%, 97% 56%, 99% 65%, 98% 74%, 100% 83%, 97% 91%, 99% 97%,
-        95% 99%, 89% 97%, 83% 100%, 76% 98%, 70% 100%, 63% 97%, 56% 99%, 49% 97%, 42% 100%, 35% 98%, 28% 100%, 21% 97%, 14% 99%, 7% 97%, 0% 100%,
-        2% 93%, 0% 84%, 3% 76%, 1% 67%, 2% 59%, 0% 50%, 3% 42%, 1% 33%, 2% 25%, 0% 16%, 2% 8%
+        0% 0.5%, 4% 0%, 9% 0.4%, 15% 0.1%, 21% 0.5%, 27% 0.1%, 33% 0.4%, 40% 0%, 48% 0.3%, 55% 0%, 
+        62% 0.4%, 68% 0.1%, 74% 0.5%, 81% 0.1%, 88% 0.4%, 94% 0%, 100% 0.3%,
+        99.6% 8%, 100% 15%, 99.5% 23%, 99.7% 31%, 99.6% 40%, 100% 48%, 99.5% 56%, 99.7% 65%, 99.6% 74%, 100% 83%, 99.5% 91%, 99.7% 97%,
+        95% 99.7%, 89% 99.5%, 83% 100%, 76% 99.6%, 70% 100%, 63% 99.5%, 56% 99.7%, 49% 99.5%, 42% 100%, 35% 99.6%, 28% 100%, 21% 99.5%, 14% 99.7%, 7% 99.5%, 0% 100%,
+        0.4% 93%, 0% 84%, 0.5% 76%, 0.2% 67%, 0.4% 59%, 0% 50%, 0.5% 42%, 0.2% 33%, 0.4% 25%, 0% 16%, 0.4% 8%
       );
       box-shadow: inset 0 0 50px rgba(114, 82, 51, 0.4);
       line-height: 1.5;
@@ -94,6 +98,10 @@
       color: #8b0000;
       line-height: 1;
     }
+
+    .indented-p {
+      text-indent: 40px;
+    }
   </style>
 </head>
 <body>
@@ -107,12 +115,57 @@
       <a href="#section2">Purgatorio</a>
       <a href="#section3">Paradiso</a>
     </div>
+
+	<div style="text-align: center; margin: 30px 0;">
+      <img src="Dante Final.png" alt="Dante Bitcoin" style="max-width: 30%; height: auto; border: 1px solid #bdae93; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+    </div>
+	  
+	<p class="dropcap">Midway upon the journey of our life, having dealt in various schemes from shitcoins to NFTs, I found myself in a dark forest, for the straightforward pathway had been lost when before me a man appeared who seemed hoarse from long-continued silence.</p> 
+	<p class="indented-p">“Are you man, or am I imagining you?”</p>
+	<p class="indented-p">He answered me, “I once was a man. I was the receiver of Satoshi’s first transaction.”</p>
+	<p class="indented-p">“And what do you want with me?”</p>
+	<p class="indented-p">“You have shitcoined. You have staked and tokenized; you have pumped and dumped. I have been sent here to show you the error of your ways, and to show you the righteous path.”</p>
+	<p class="indented-p">And with that the earth split open, flames rose high and distant screams could be heard, and my guide beckoned me to follow him. We descended a path, leading us to a gate, upon which was inscribed:</p>
+	<p><b>Through me to everlasting pain you go. Through me you go and pass among lost souls. Abandon all cope, ye who enter here.</b></p>
     
     <!-- SECTION 1 -->
     <div id="section1">
       <h2>Inferno</h2>
-      <p class="dropcap">We cast off from the harbor at dawn. The fog was heavy, masking our departure from the eyes of the harbor master. With wind in our sails and a map in hand, we venture into uncharted waters.</p>
-      <p>The sea was calm on this first morning, but the crew remains tense. Every man knows the legends of what lies beyond the edge of the mapped world.</p>
+	  <p><i>“There pride, avarice, and envy are the tongues men know and heed, a Babel of despair”</i></p>
+      <p class="dropcap">We entered into the first ring of hell. Before me at a distance I could see a mass of people sitting on the ground, not looking at anything or talking to anyone, for their heads had no eyes, ears, or mouths. I turned to my guide and asked, </p>
+      <p class="indented-p">“Who are those people? Why do they not have any faces?”</p>
+	  <p class="indented-p">“Those are the nonbelievers. They remain here unable to sense the fiery conditions around them. The first ring is their home because there is no malice in them, only ignorance. Their destiny is to sit here forever oblivious to their surroundings.” This left me uneasy, but my guide insisted we continue on.</p>
+	  <p class="indented-p">The heat from the flames became noticeably more intense as we descended into the second ring of hell. Then came into my view a chaotic scene: people running in every direction, screaming how the flames had dried their throats, searching frantically for water while a large cauldron, filled to the brim with ice-cold water, sat in their midst yet remained undetected. These souls ran around it and past it, but they disregarded it. Instead, on the perimeter, were buckets of spoiled milk, salt water, and urine to which they would run, grab firmly, then begin pouring down their parched throats.</p>
+	  <p class="indented-p">“Why are they drinking such foul substances? Do they not see the water which would ease their pain?”</p>
+	  <p class="indented-p">“They see it, but they disregard it. They ignore the obvious, thinking they can find something better, but in doing so, are doomed forever to drink filth. But this dries quickly and only worsens their thirst.”</p>
+	  <p class="indented-p">I stood watching as one man, whose face was covered in rancid milk, ran to a bucket of urine and gulped it down. Immediately he began to scream in pain from his worsening throat and then sprinted to a bucket of salt water to repeat the torture.</p>
+	  <p class="indented-p">“These are the shitcoiners?” </p>
+	  <p class="indented-p">My guide nodded. “We must go further.” And with that, we descended into the third ring of hell.</p>
+	  <p class="indented-p">As we went further, a low but loud hum became ever more audible. It sounded to me like words, yet I could not understand anything. My guide pushed me on when we came suddenly upon a hoard of angry people, yelling and screaming, except that their mouths were sewn shut. Some were wearing graduation robes and some press badges, while others donned political symbols from the world above. They stood there, pointing and gesticulating, while nothing but a muffled din could be heard.</p>
+	  <p class="indented-p">“In their lives,” my guide started, “these people drove others from the righteous path. They were hubristic, unable to consider the folly of their ways. Instead of curiosity and introspection, they believed themselves to be masters of domains unknown to them. On Earth some wailed, while others shrieked. They spread fear, uncertainty, and doubt. And for that, their mouths have been permanently closed — condemned to an eternity of panicked cries, but no one shall ever hear them.”</p>
+ 	  <p class="indented-p">I stood there, uneasy. “What could they possibly have said?”</p>
+	  <p class="indented-p">My guide summoned three to him and temporarily opened their mouths.</p>
+      <p class="indented-p">“Infinitely divisible!” one cried.</p>
+	  <p class="indented-p">“It has no intrinsic value!” shouted another.</p>
+	  <p class="indented-p">“You can’t even buy coffee with it,” the third said smugly.</p>
+	  <p class="indented-p">I covered my ears. “This is all too much to bear. My soul hurts. Please take me away from here.”</p>
+	  <p class="indented-p">“No,” my guide responded, “you must continue. The vile and the rotten await.” He grasped me by the hand, and we descended lower.</p>
+	  <p class="indented-p">The flames became unbearable and my breathing more labored. It hurt to open my eyes, but before me appeared a scene: men I recognized from the world above, men who once led large exchanges, walking in a circle, each carrying an iron chest on their backs. Inside these chests were coins inscribed with the name of each person on Earth who they stole from.</p>
+	  <p class="indented-p">“The more victims,” my guide explained, “the heavier the chest.”</p>
+	  <p class="indented-p">The men walked in circles as demons watched from above. Suddenly, a man slipped and dropped his chest, spilling some of the coins. A demon swooped down and gathered the coins.</p>
+	  <p class="indented-p">“Deploying more capital - steady lads!” The other demons laughed as he doubled the amount of coins and threw them into the chest. The man was stood back up and was forced again to bear his burden.</p>
+	  <p class="indented-p">“These are the fraudsters,” I said. “I know from whom they took. Through lies, deceit, and malevolence they robbed from the people. Futures were destroyed. Even lives were taken.”</p>
+	  <p class="indented-p">“And look at them now,” my guide mused. “Here they must carry the weight of those whom they deceived.”</p>
+	  <p class="indented-p">At that same moment, another of the men fell down. A demon quickly returned the chest to the man’s back, then stood on it, increasing its weight.</p>
+	  <p class="indented-p">“FTX is fine! Assets are fine!” The demons above laughed again.</p>
+	  <p class="indented-p">I turned to my guide. “Surely this is the end. There cannot be anyone more wicked than this.”</p>
+	  <p class="indented-p">“There is one level yet. Prepare yourself, for it is the seat of the greatest evil.”</p>
+	  <p class="indented-p">I steeled myself, and we went lower. The air began to turn. What above had been a scorching heat was now a freezing chill.</p>
+	  <p class="indented-p">Before my eyes, looking large and disgusting, was the central banker himself. He had not taken his earthly form, but instead that of a monster. Perched on a throne of skulls made from the men who had fallen in his wars, two wings protruded from his back. On one was written “Employment,” on the other “Inflation.” The wings beat twice a minute, and with each time, the air became more frigid. However, the most gruesome detail was that in his mouth was a man — a common man — perpetually gnashed by the monster’s teeth. Muffled screams could be heard, but the monster paid no heed.</p>
+	  <p class="indented-p">I began to weep. The skulls of the fallen, the chill from the wings, the incessant grinding of an innocent man —  I could not bear it. I turned to my guide.</p>
+	  <p class="indented-p">“I have seen the face of evil. I understand it now. Take me from this place! I cannot endure any longer.”</p>
+	  <p class="indented-p">My guide, seeing that I indeed had understood my journey heretofore, seized me by the hand.</p>
+	  <p class="indented-p">“Very well. It is time to move on.” And so we departed Hell for our next destination.</p>
     </div>
 
     <hr> <!-- Section Divider -->
@@ -120,8 +173,24 @@
     <!-- SECTION 2 -->
     <div id="section2">
       <h2>Purgatorio</h2>
-      <p class="dropcap">On the tenth night, the sky turned to ash. Lightning cracked open the heavens, and waves as tall as castle walls crashed over our bow. We fought the rigging for twelve grueling hours.</p>
-      <p>Though the mainmast cracked under the pressure, the hull held true. We survived the tempest, but our navigation tools were lost to the sea.</p>
+	  <p><i>"He who best discerns the worth of time is most distressed whenever time is lost"</i></p>
+      <p class="dropcap">We arrived at the base of a mountain. It stood towering over us, its peak extending beyond the clouds.  My guide raised his arm forward.</p>
+	  <p class="indented-p">“Here souls who erred but were not malicious, work to fix their faults. The climb may be long, but salvation is possible.”</p>
+	  <p class="indented-p">We began our ascent up a path. It was not long before we came upon our first scene: a field pockmarked with holes. But the holes were not random. They were of equal shape and numbered in the hundreds. To my right, a large group of older men were digging with their spades.</p>
+	  <p class="indented-p">“What are they doing?” I asked.</p>
+	  <p class="indented-p">“Each man here must dig a hole twenty-one inches by twenty-one inches. And they must do so 256 times a day. These numbers meant little to them in their lives, but from this repetition they will learn their importance.”</p>
+	  <p class="indented-p">“Gold bugs,” I whispered. My guide nodded. We continued on.</p>
+	  <p class="indented-p">As we approached a cave, I saw people carrying gold in their hands exiting from within. They walked a distance in front of us before depositing the gold into a large safe. They then turned back to the cave to get more gold as others came out with their own gold and placed it into the safe as well.</p>
+	  <p class="indented-p">“I believe I know who these are. These are the people who left their bitcoin on exchanges.”</p>
+	  <p class="indented-p">“Yes,” my guide confirmed, “and here they learn to custody a valuable asset.”</p>
+	  <p class="indented-p">My guide beckoned me forward. The climb was long, but high up on the mountain we found ourselves in a forest abound with trees, and amongst the trees were individuals chopping them down and collecting the wood. When an individual successfully cut down a tree, he moved on to the next. All the while, a light drizzle of rain fell from the sky.</p>
+	  <p class="indented-p">“These are the ones that did not acquire enough bitcoin. In their lives they knew the right course but lacked the effort to change their lives. Here they fell trees, which requires persistent, dedicated work. No workarounds exist. Only through hard work will they be able to build themselves a shelter and escape the rain.”</p>
+	  <p class="indented-p">“And who are they?” I pointed to a small group sitting higher up on the mountain, above the rain. They all faced a flat slab of rock on which projections of cars, boats, and chairs were cast. They sat still, not stirring.</p>
+	  <p class="indented-p">“They practice patience, for those are the ones who sold too early,” my guide explained. “Their desire to sit off the floor or not cut their own hair cost them dearly. The worst offenders bought depreciating assets. Here they sit until they have reoriented their priorities. But come now, we have one more stop on this mountain.”</p>
+	  <p class="indented-p">We reached the summit where there were people with binoculars watching the activity of the lower rings. As a tree was felled, a person yelled it to the others, who then repeated that the tree was felled. When a hole was completed below, another yelled it to the group, who then repeated the same.</p>
+	  <p class="indented-p">“The people here confirm that the work is being done. When they observe a completed task, they inform the others. On Earth, they did not run Bitcoin nodes. But here they will learn the importance of verification.”</p>
+	  <p class="indented-p">I turned nervously to my guide. “You said this was the final stop on this mountain. Am I to return home now?”</p>
+	  <p class="indented-p">“No,” he said with a smirk. “Your journey is not yet complete. I have one more place to take you.” My guide grabbed me by the hand, and we shot upwards.</p>
     </div>
 
     <hr> <!-- Section Divider -->
@@ -129,12 +198,36 @@
     <!-- SECTION 3 -->
     <div id="section3">
       <h2>Paradiso</h2>
-      <p class="dropcap">A faint green shadow appeared on the horizon just as our water rations ran dry. It was an island, completely blank on our charts, covered in massive stone structures overgrown with ancient vines.</p>
-      <p>We drop anchor here. Tomorrow, we row ashore to see what secrets this forgotten land holds.</p>
+	  <p style="text-align: center;"><i>"From a little spark may burst a flame"</i></p>
+      <p class="dropcap">Lost in a blur, I could not tell where we were. My surroundings were serene. No noise to be heard, no discomfort in the air, only tranquility. I started to move forward, and my guide followed me. I knew not where I was going, but I felt compelled to continue on. As I walked, I could make out a figure in front of me. I got closer. Only when I was nearly in front of the figure did I see who it was.</p>
+	  <p class="indented-p">“This is your friend,” my guide said from behind me. “This is your friend who introduced you to Bitcoin.”</p>
+	  <p class="indented-p">“Oh how delighted I am to see you here!” my friend exclaimed. “I told so many people about Bitcoin, and so many people ignored me. It sometimes feels hopeless to explain this to others, but I see with you the time was not in vain!”</p>
+	  <p class="indented-p">“In vain? To the contrary! Were it not for you, I may never have heard of Bitcoin. Or if I had, I might have found myself digging holes or staring at Lambos all day. I have you to thank for my salvation from that!”</p>
+	  <p class="indented-p">“Oh, I was merely the one who lit the spark. Walk further and you will meet the ones who you can really thank.”</p>
+	  <p class="indented-p">I pressed on, curious about whom my friend was referring. After some time I saw a group ahead. I raced forward, but I did not recognize them. My guide greeted each member from the group.</p>
+	  <p class="indented-p">He then turned to me. “You may not recognize them, but these are the developers. It is on their code that the bitcoin network runs. Every wallet you used, every transaction you sent, every block that was confirmed — all of it is because of them. They are the builders of the system we hold so dearly in our hearts. The person who was saved from a failing currency — it is thanks to their work. The person who escaped tyranny — it is thanks to their work. The person who exited a rigged system — it is thanks to their work. They are Atlas, upon whose shoulders the world rests.”</p>  
+	  <p class="indented-p">I stood there silently, unable to find the words to express myself. I was only able to muster a “thank you” before my guide insisted I continue on.</p>
+	  <p class="indented-p">Very soon I came upon more men, but they looked rather distinct from those I had just departed. Their hair was grey and their clothes older. They seemed to be from a previous era, not my own.</p>
+	  <p class="indented-p">I heard my guide’s voice from behind. “Bitcoin may have been created in the year 2008, but its intellectual origins date back over a century. These are the economists who developed the ideas that would inspire Bitcoin long after their time had passed. They devoted their lives to the cause of economic freedom and prosperity, even knowing that they may never see it in their lifetime. Yet they did not yield to evil but proceeded ever more boldly against it. While they never knew Bitcoin in their day, they laid the foundation upon which it was built and thus have a right to be with us here.”</p>
+	  <p class="indented-p">This time I gathered my composure. “When it was darkest, you carried the flame forward so that others might benefit. I was one of those who benefited.” I bowed my head. “Thank you.” As we walked past these men, one tapped me on the shoulder.</p>
+	  <p class="indented-p">“I knew we’d find that sly, roundabout way,” he said, smiling.</p>
+	  <p class="indented-p">This time my guide was in front of me as we walked on. He was moving faster, and I struggled to keep pace. He seemed to be in a hurry.</p>
+	  <p class="indented-p">It was not long before we came upon a small group, some of whose faces were indiscernible. When they saw my guide, they cheered and embraced him.</p>
+	  <p class="indented-p">“Hal! Good to have you back!”</p>
+	  <p class="indented-p">My guide turned to me. “These are my friends, the Cypherpunks. They created digital cash, further developed cryptography, and wrote code to counter surveillance and promote individual liberty in an ever-increasing digital world. It is from our movement that Bitcoin was created. We were on the original mailing list and aided Bitcoin in its formation. We tested the first transactions and mined the first blocks.”</p>
+	  <p class="indented-p">“You have inspired so many,” I said. “And your work has changed the world.”</p>
+	  <p class="indented-p">My guide smiled. “It is time for you to go on.” This time he did not move.</p>
+	  <p class="indented-p">“Are you not coming with me?” I asked nervously.</p>
+	  <p class="indented-p">“No, you no longer need me. I belong here with my friends. You are ready.”</p>
+	  <p class="indented-p">I walked forward, trembling before what lay ahead. Then a flash appeared above me.</p>
+	  <p class="indented-p">I lifted my head towards the sky. A bright light entered my eyes, and I saw a beautiful vision, the likes of which exceed my speech and memory. Abstractions, previously thought impossible, were expressed in a few simple lines of technical prose. Scarcity, permissionlessness, and transparency — once a dream — were instantiated before me. Censorship resistance and decentralization were now part of the cosmic order. A sense of long-lost hope overcame my body. I closed my eyes. When I opened them again, I saw myself in the light. Not only myself, but every face of the earth.</p>
+  	  <p style="text-align: center;"><i>Here my exalted vision lost its power</i></p>
+	  <p style="text-align: center;"><i>But now my will and my desire, like wheels revolving</i></p>
+      <p style="text-align: center;"><i>with an even motion, were turning with</i></p>
+	  <p style="text-align: center;"><i>the Code that moves the sun and all the other stars</i></p>
     </div>
 
   </div>
 
 </body>
 </html>
-
